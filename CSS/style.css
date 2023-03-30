@@ -1,0 +1,614 @@
+body {
+    background-color: #EEEEEE;
+}
+.header {
+    width: 100%;
+    height: 92px;
+    background-color: #CF2B2B;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.header .caixa1 {
+    width: 248px;
+    height: 44px;
+    margin-top: 8px;
+    margin-left: 21px;
+    margin-bottom: 5px;
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 54.63px;
+    color:#FFFFFF;
+}
+.header .caixa2 {
+    width: 226px;
+    height: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 21px;
+    line-height: 21.09px;
+    color: #FFFFFF;
+}
+.opcoes {
+    width: 250px;
+    height: 25px;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 19px;
+    line-height: 32.28px;
+    color: #333333;
+    margin-top: 123px;
+    margin-bottom: 17px;
+}
+.rolagem1 {
+    width: 100%;
+    height: 216px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+.rolagem1 .caixa3 {
+    width: 172px;
+    height: 216px;
+    margin-left: 19px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa3 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa3 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa3 .descricaodoprato {
+    width: 147px;
+    height: 39px;
+    margin-left: 14px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa3 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+ .rolagem1 .caixa4 {
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa4 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa4 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa4 .descricaodoprato {
+    width: 147px;
+    height: 39px;
+    margin-left: 14px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa4 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+
+
+.rolagem1 .caixa5 {
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa5 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa5 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa5 .descricaodoprato {
+    width: 147px;
+    height: 39px;
+    margin-left: 14px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa5 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+.opcoes1 {
+    width: 231px;
+    height: 25px;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 19px;
+    line-height: 32.28px;
+    color: #333333;
+    margin-top: 27px;
+    margin-bottom: 17px;
+}
+.rolagem2 {
+    width: 100%;
+    height: 216px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+
+.rolagem2 .caixa6 {
+    width: 172px;
+    height: 216px;
+    margin-left: 19px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa6 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa6 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa6 .descricaodoprato {
+    width: 147px;
+    height: 18px;
+    margin-left: 14px;
+    margin-bottom: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa6 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+
+.rolagem2 .caixa7 {
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa7 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa7 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa7 .descricaodoprato {
+    width: 147px;
+    height: 18px;
+    margin-left: 14px;
+    margin-bottom: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa7 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+
+.rolagem2 .caixa8 {
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa8 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa8 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa8 .descricaodoprato {
+    width: 147px;
+    height: 18px;
+    margin-left: 14px;
+    margin-bottom: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa8 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+.rolagem3 {
+    width: 100%;
+    height: 216px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    margin-bottom: 108px;
+}
+
+.rolagem3 .caixa9 {
+    width: 172px;
+    height: 216px;
+    margin-left: 19px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa9 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa9 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa9 .descricaodoprato {
+    width: 147px;
+    height: 18px;
+    margin-left: 14px;
+    margin-bottom: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa9 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+
+.rolagem3 .caixa10 {
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa10 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa10 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa10 .descricaodoprato {
+    width: 147px;
+    height: 18px;
+    margin-left: 14px;
+    margin-bottom: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa10 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+.rolagem3 .caixa11 {
+    width: 172px;
+    height: 216px;
+    margin-right: 16px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0px 10px -4 rgba(0, 0, 0, 0.3);
+}
+.caixa11 .foto1 {
+    width: 144px;
+    height: 87px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.caixa11 .nomedoprato {
+    width: 139px;
+    height: 23px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #333333;
+}
+.caixa11 .descricaodoprato {
+    width: 147px;
+    height: 18px;
+    margin-left: 14px;
+    margin-bottom: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.58px;
+    color: #A6A6A6;
+}
+.caixa11 .valor {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+}
+.opcoes2 {
+    width: 320px;
+    height: 25px;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 19px;
+    line-height: 32.28px;
+    color: #333333;
+    margin-top: 27px;
+    margin-bottom: 17px;
+}
+
+.sacola {
+    width: 414px;
+    height: 92px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+
+    position: fixed;
+    bottom: 0;
+}
+.confirmarpedido {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #CBCBCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+}
+.sacola1 {
+    width: 100%;
+    height: 92px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+}
+.confirmarpedido1 {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #32B72F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+}
+
+
+
+
+
+
+
