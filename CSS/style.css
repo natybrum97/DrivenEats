@@ -606,6 +606,11 @@ body {
     line-height: 23.44px;
 }
 
+.rolagem1 .selecionado {
+    background-color: #28A745;
+    color: #FFF;
+}
+
 
 
 
