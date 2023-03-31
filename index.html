@@ -40,7 +40,10 @@
             <img class="foto1" src="./Imagens/frango_yin_yang.png" />
             <p class="nomedoprato">Peixe Yin Yang</p>
             <p class="descricaodoprato">Um pouco de batata, um pouco de salada</p>
-            <p class="valor">R$ 18,90</p>
+            <div class="verde">
+                <p class="valor">R$ 6,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
     </div>
 
@@ -70,22 +73,22 @@
     <div class="opcoes2">Por fim, sua sobremesa</div>
 
     <div class="rolagem3">
-        <div class="caixa9">
+        <div class="caixa9 pudim" onclick="selecionarSobremesa('.pudim')">
             <img class="foto1" src="./Imagens/pudim.png" />
             <p class="nomedoprato">Pudim</p>
             <p class="descricaodoprato">Apenas pudim</p>
             <p class="valor">R$ 7,90</p>
         </div>
-        <div class="caixa10">
+        <div class="caixa10 brownie" onclick="selecionarSobremesa('.brownie')">
             <img class="foto1" src="./Imagens/pudim.png" />
             <p class="nomedoprato">Brownie</p>
-            <p class="descricaodoprato">Apenas pudim</p>
+            <p class="descricaodoprato">Apenas brownie</p>
             <p class="valor">R$ 8,90</p>
         </div>
-        <div class="caixa11">
+        <div class="caixa11 alfajor" onclick="selecionarSobremesa('.alfajor')">
             <img class="foto1" src="./Imagens/pudim.png" />
             <p class="nomedoprato">Alfajor</p>
-            <p class="descricaodoprato">Apenas pudim</p>
+            <p class="descricaodoprato">Apenas alfajor</p>
             <p class="valor">R$ 9,90</p>
         </div>
     </div>
@@ -120,7 +123,19 @@
             }
 
             const botao = document.querySelector(seletor);
-            botao.classList.add('selecionado');
+            botao.classList.toggle('selecionado');
+        }
+
+        function selecionarSobremesa(seletor) {
+            const botaoSelecionadoAnteriormente = document.querySelector('.rolagem3 .selecionado');
+            console.log(botaoSelecionadoAnteriormente);
+
+            if ( botaoSelecionadoAnteriormente !== null ){
+            botaoSelecionadoAnteriormente.classList.remove('selecionado');
+            }
+
+            const botao = document.querySelector(seletor);
+            botao.classList.toggle('selecionado');
         }
     </script>
 
