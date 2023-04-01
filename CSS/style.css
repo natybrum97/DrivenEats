@@ -248,7 +248,7 @@ body {
     width: 139px;
     height: 23px;
     margin-left: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -258,8 +258,8 @@ body {
 .caixa6 .descricaodoprato {
     width: 147px;
     height: 18px;
-    margin-left: 14px;
-    margin-bottom: 9px;
+    margin-left: 15px;
+    margin-bottom: 18px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -269,7 +269,7 @@ body {
 .caixa6 .valor {
     width: 66px;
     height: 19px;
-    margin-left: 14px;
+    margin-left: 15px;
     margin-bottom: 16px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -299,7 +299,7 @@ body {
     width: 139px;
     height: 23px;
     margin-left: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -309,8 +309,8 @@ body {
 .caixa7 .descricaodoprato {
     width: 147px;
     height: 18px;
-    margin-left: 14px;
-    margin-bottom: 9px;
+    margin-left: 15px;
+    margin-bottom: 18px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -320,7 +320,7 @@ body {
 .caixa7 .valor {
     width: 66px;
     height: 19px;
-    margin-left: 14px;
+    margin-left: 15px;
     margin-bottom: 16px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -350,7 +350,7 @@ body {
     width: 139px;
     height: 23px;
     margin-left: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -361,7 +361,7 @@ body {
     width: 147px;
     height: 18px;
     margin-left: 14px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -410,7 +410,7 @@ body {
     width: 139px;
     height: 23px;
     margin-left: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -421,7 +421,7 @@ body {
     width: 147px;
     height: 18px;
     margin-left: 14px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -461,7 +461,7 @@ body {
     width: 139px;
     height: 23px;
     margin-left: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -472,7 +472,7 @@ body {
     width: 147px;
     height: 18px;
     margin-left: 14px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -511,7 +511,7 @@ body {
     width: 139px;
     height: 23px;
     margin-left: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -522,7 +522,7 @@ body {
     width: 147px;
     height: 18px;
     margin-left: 14px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -615,15 +615,81 @@ body {
     box-shadow: inset 0 0 0 5px #32B72F;
 }
 .verde {
-    background-color: #CF2B2B;
-    width: 144px;
+    width: 162px;
     height: auto;
     display: flex;
     justify-content: space-between;
 
 }
-.confirmar {
+ .caixa3 .confirmar {
+    display: none;
+  }
+  
+  .caixa3.selecionado .confirmar {
+    display: block;
     color: #32B72F;
-    width: 15.44px;
-    height: 15.44px;
-}
+  }
+  .caixa4 .confirmar {
+    display: none;
+  }
+  
+  .caixa4.selecionado .confirmar {
+    display: block;
+    color: #32B72F;
+  }
+  .caixa5 .confirmar {
+    display: none;
+  }
+  
+  .caixa5.selecionado .confirmar {
+    display: block;
+    color: #32B72F;
+  }
+  .caixa6 .confirmar {
+    display: none;
+  }
+  
+  .caixa6.selecionado .confirmar {
+    display: block;
+    color: #32B72F;
+  }
+  .caixa7 .confirmar {
+    display: none;
+  }
+  
+  .caixa7.selecionado .confirmar {
+    display: block;
+    color: #32B72F;
+  }
+  .caixa8 .confirmar {
+    display: none;
+  }
+  
+  .caixa8.selecionado .confirmar {
+    display: block;
+    color: #32B72F;
+  }
+  .caixa9 .confirmar {
+    display: none;
+  }
+  
+  .caixa9.selecionado .confirmar {
+    display: block;
+    color: #32B72F;
+  }
+  .caixa10 .confirmar {
+    display: none;
+  }
+  
+  .caixa10.selecionado .confirmar {
+    display: block;
+    color: #32B72F;
+  }
+  .caixa11 .confirmar {
+    display: none;
+  }
+  
+  .caixa11.selecionado .confirmar {
+    display: block;
+    color: #32B72F;
+  }

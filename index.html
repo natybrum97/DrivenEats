@@ -28,20 +28,26 @@
             <img class="foto1" src="./Imagens/frango_yin_yang.png" />
             <p class="nomedoprato">Frango Yin Yang</p>
             <p class="descricaodoprato">Um pouco de batata, um pouco de salada</p>
-            <p class="valor">R$ 14,90</p>
+            <div class="verde">
+                <p class="valor">R$ 14,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
         <div class="caixa4 carne" onclick="selecionarPrato('.carne')">
             <img class="foto1" src="./Imagens/frango_yin_yang.png" />
             <p class="nomedoprato">Carne Yin Yang</p>
             <p class="descricaodoprato">Um pouco de batata, um pouco de salada</p>
-            <p class="valor">R$ 17,90</p>
+            <div class="verde">
+                <p class="valor">R$ 17,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
         <div class="caixa5 peixe" onclick="selecionarPrato('.peixe')">
             <img class="foto1" src="./Imagens/frango_yin_yang.png" />
             <p class="nomedoprato">Peixe Yin Yang</p>
             <p class="descricaodoprato">Um pouco de batata, um pouco de salada</p>
             <div class="verde">
-                <p class="valor">R$ 6,90</p>
+                <p class="valor">R$ 16,90</p>
                 <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
             </div>
         </div>
@@ -54,19 +60,28 @@
             <img class="foto1" src="./Imagens/coca-cola.png" />
             <p class="nomedoprato">Coca gelada</p>
             <p class="descricaodoprato">Lata 350ml</p>
-            <p class="valor">R$ 4,90</p>
+            <div class="verde">
+                <p class="valor">R$ 4,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
         <div class="caixa7 fanta" onclick="selecionarBebida('.fanta')">
             <img class="foto1" src="./Imagens/coca-cola.png" />
             <p class="nomedoprato">Fanta gelada</p>
             <p class="descricaodoprato">Lata 350ml</p>
-            <p class="valor">R$ 5,90</p>
+            <div class="verde">
+                <p class="valor">R$ 5,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
         <div class="caixa8 guarana" onclick="selecionarBebida('.guarana')">
             <img class="foto1" src="./Imagens/coca-cola.png" />
             <p class="nomedoprato">Guaraná gelado</p>
             <p class="descricaodoprato">Lata 350ml</p>
-            <p class="valor">R$ 6,90</p>
+            <div class="verde">
+                <p class="valor">R$ 6,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
     </div>
     
@@ -77,19 +92,28 @@
             <img class="foto1" src="./Imagens/pudim.png" />
             <p class="nomedoprato">Pudim</p>
             <p class="descricaodoprato">Apenas pudim</p>
-            <p class="valor">R$ 7,90</p>
+            <div class="verde">
+                <p class="valor">R$ 7,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
         <div class="caixa10 brownie" onclick="selecionarSobremesa('.brownie')">
             <img class="foto1" src="./Imagens/pudim.png" />
             <p class="nomedoprato">Brownie</p>
             <p class="descricaodoprato">Apenas brownie</p>
-            <p class="valor">R$ 8,90</p>
+            <div class="verde">
+                <p class="valor">R$ 8,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
         <div class="caixa11 alfajor" onclick="selecionarSobremesa('.alfajor')">
             <img class="foto1" src="./Imagens/pudim.png" />
             <p class="nomedoprato">Alfajor</p>
             <p class="descricaodoprato">Apenas alfajor</p>
-            <p class="valor">R$ 9,90</p>
+            <div class="verde">
+                <p class="valor">R$ 9,90</p>
+                <ion-icon name ="checkmark-circle" class="confirmar"></ion-icon>
+            </div>
         </div>
     </div>
 
@@ -124,6 +148,7 @@
 
             const botao = document.querySelector(seletor);
             botao.classList.toggle('selecionado');
+            
         }
 
         function selecionarSobremesa(seletor) {
@@ -138,6 +163,9 @@
             botao.classList.toggle('selecionado');
         }
     </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
