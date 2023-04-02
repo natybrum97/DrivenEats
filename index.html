@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;400;500;700&family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="maior">
     <div class="header">
         <div class="caixa1">
             <h1>DrivenEats</h1>
@@ -118,8 +119,41 @@
     </div>
 
     <footer class="sacola">
-        <button id="finalizarPedidoButton" onclick="continuar()" disabled>Selecione os 3 itens <br>para fechar o pedido</button>
+        <button id="finalizarPedidoButton" class="" onclick="irPaginadeconfirmação()" disabled>Selecione os 3 itens <br>para fechar o pedido</button>
     </footer>
+  
+  </div>
+  <div id="aparecediv" class="maior2">
+        <div class="paginadeconfirmacao"></div>
+        <div class="paginadeconfirmacao1">
+            <div class="avisoverde">
+                <div class="pedido1">Confirme seu pedido</div>
+                <div class="itens">
+                    <div class="ped"></div>
+                    <div class="ped"></div>
+                </div>
+                <div class="itens">
+                    <div class="ped"></div>
+                    <div class="ped"></div>
+                </div>
+                <div class="itens">
+                    <div class="ped"></div>
+                    <div class="ped"></div>
+                </div>
+                <div class="itens">
+                    <div class="ped"></div>
+                    <div class="ped"></div>
+                </div>
+                <div class="fundo">
+                    <button id="finalizarPedidoButton" onclick="continuar()">Tudo certo, pode pedir!</button>
+                </div>
+                <div class="fundo1">
+                    <button onclick="sairDaPaginadeConfirmacao ()">Cancelar</button>
+                </div>
+            </div>
+  </div>
+  </div>
+  
 
     <script>
 
@@ -171,16 +205,33 @@
   
   function atualizarBotaoFinalizarPedido() {
     if (comidaSelecionada && bebidaSelecionada && sobremesaSelecionada) {
-        finalizarPedidoButton.classList.remove("botao-finalizar");
-        finalizarPedidoButton.classList.add("botao-finalizar-habilitado");
+        finalizarPedidoButton.style.backgroundColor = "#32B72F";
         finalizarPedidoButton.disabled = false;
         finalizarPedidoButton.textContent = "Fechar Pedido";
     } else {
         finalizarPedidoButton.classList.remove("botao-finalizar-habilitado");
-        finalizarPedidoButton.classList.add("botao-finalizar");
+        finalizarPedidoButton.classList.add("button");
         finalizarPedidoButton.disabled = true;
     }
 }
+    function irPaginadeconfirmação() {
+        const aparecediv = document.getElementById("aparecediv");
+
+        if (aparecediv.style.display === "none") {
+        aparecediv.style.display = "block";
+        } else {
+        aparecediv.style.display = "none";
+        }
+    }
+
+    function sairDaPaginadeConfirmacao () {
+        const aparecediv = document.getElementById("aparecediv");
+        if (aparecediv.style.display === "block") {
+        aparecediv.style.display = "none";
+        } else {
+        aparecediv.style.display = "block";
+        }
+    }
     
     function continuar() {
     let nome = prompt('Qual é o seu nome?');

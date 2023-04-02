@@ -572,7 +572,7 @@ body {
     position: fixed;
     bottom: 0;
 }
- button {
+ .sacola button {
     width: 364px;
     height: 61px;
     border-radius: 50px;
@@ -583,33 +583,6 @@ body {
     font-weight: 400;
     line-height: 23.44px;
     border:none;
-}
-.sacola1 {
-    width: 100%;
-    height: 92px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-    position: fixed;
-    bottom: 0;
-}
-.confirmarpedido1 {
-    width: 364px;
-    height: 61px;
-    border-radius: 50px;
-    background-color: #32B72F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23.44px;
-    display: none;
 }
 .rolagem1 .selecionado {
     box-shadow: inset 0 0 0 5px #32B72F;
@@ -704,3 +677,120 @@ body {
     color: white;
     border: none;
 }
+.maior {
+    position: relative;
+    opacity: 1;
+}
+.paginadeconfirmacao {
+    width: 414px;
+    height: 1070px;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    z-index: 2;
+}
+.paginadeconfirmacao1 {
+    width: 414px;
+    height: 1026px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    z-index: 2;
+}
+.paginadeconfirmacao1 .avisoverde {
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 9px;
+    opacity: 1;
+}
+.paginadeconfirmacao1 .avisoverde .pedido1 {
+    width: 377px;
+    height: 27px;
+    color: #FFFFFF;
+    margin-top: 21px;
+    margin-bottom: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginadeconfirmacao1 .avisoverde .itens {
+    width: 325px;
+    height: 27px;
+    margin-bottom: 13px;
+    margin-left: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paginadeconfirmacao1 .avisoverde .itens .ped {
+    width: 162.5px;
+    height: 27px;
+    background-color: yellow;
+}
+.paginadeconfirmacao1 .avisoverde .fundo button {
+    width: 333px;
+    height: 52px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    color: #50D074;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.78px;
+    border:none;
+}
+.paginadeconfirmacao1 .avisoverde .fundo {
+    width: 377px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.paginadeconfirmacao1 .avisoverde .fundo1 {
+    width: 377px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginadeconfirmacao1 .avisoverde .fundo1 button {
+    width: 333px;
+    height: 52px;
+    border-radius: 50px;
+    background-color: #50D074;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    border:none;
+}
+.maior2 {
+    display: none;
+}
+#aparecediv {
+    display: none;
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
