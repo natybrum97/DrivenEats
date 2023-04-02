@@ -129,20 +129,20 @@
             <div class="avisoverde">
                 <div class="pedido1">Confirme seu pedido</div>
                 <div class="itens">
-                    <div id="outra1" class="ped"></div>
-                    <div id="outra2" class="ped"></div>
+                    <div class="ped nome1"></div>
+                    <div class="ped nome2"></div>
                 </div>
                 <div class="itens">
-                    <div id="outra3" class="ped"></div>
-                    <div id="outra4" class="ped"></div>
+                    <div class="ped nome3"></div>
+                    <div class="ped nome4"></div>
                 </div>
                 <div class="itens">
-                    <div id="outra5" class="ped"></div>
-                    <div id="outra6" class="ped"></div>
+                    <div class="ped nome5"></div>
+                    <div class="ped nome6"></div>
                 </div>
                 <div class="itens">
-                    <div id="outra7" class="ped"></div>
-                    <div id="outra8" class="ped"></div>
+                    <div class="ped1 nome7">TOTAL</div>
+                    <div class="ped2 nome8"></div>
                 </div>
                 <div class="fundo">
                     <button id="finalizarPedidoButton" onclick="continuar()">Tudo certo, pode pedir!</button>
@@ -171,7 +171,7 @@
     const botao = document.querySelector(seletor);
     botao.classList.toggle('selecionado');
     
-    var comidaSelecionada = !!document.querySelector('.rolagem1 .selecionado');
+    comidaSelecionada = !!document.querySelector('.rolagem1 .selecionado');
     atualizarBotaoFinalizarPedido();
   }
 
@@ -222,6 +222,68 @@
         } else {
         aparecediv.style.display = "none";
         }
+
+        nome_prato = document.querySelector('.rolagem1 .selecionado .nomedoprato');
+        const prato1 = nome_prato.textContent;
+        const janela_nome_prato = document.querySelector('.itens .nome1');
+        janela_nome_prato.innerHTML= prato1;
+        console.log(janela_nome_prato);
+
+        valor_comida = document.querySelector('.rolagem1 .selecionado .valor');
+        const prato2 = valor_comida.textContent;
+        const janela_valor_prato = document.querySelector('.itens .nome2');
+        janela_valor_prato.innerHTML= prato2;
+        console.log(janela_valor_prato);
+        const stringValorPrato = janela_valor_prato.textContent;
+        console.log(typeof stringValorPrato); // deve imprimir 'string'
+
+        nome_bebida = document.querySelector('.rolagem2 .selecionado .nomedoprato');
+        const prato3 = nome_bebida.textContent;
+        const janela_nome_bebida = document.querySelector('.itens .nome3');
+        janela_nome_bebida.innerHTML= prato3;
+        console.log(janela_nome_bebida);
+
+        valor_bebida = document.querySelector('.rolagem2 .selecionado .valor');
+        const prato4 = valor_bebida.textContent;
+        const janela_valor_bebida = document.querySelector('.itens .nome4');
+        janela_valor_bebida.innerHTML= prato4;
+        console.log(janela_valor_bebida);
+        const stringValorBebida = janela_valor_bebida.textContent;
+        console.log(typeof stringValorBebida); // deve imprimir 'string'
+
+        nome_sobremesa = document.querySelector('.rolagem3 .selecionado .nomedoprato');
+        const prato5 = nome_sobremesa.textContent;
+        const janela_nome_sobremesa = document.querySelector('.itens .nome5');
+        janela_nome_sobremesa.innerHTML= prato5;
+        console.log(janela_nome_sobremesa);
+
+        valor_sobremesa = document.querySelector('.rolagem3 .selecionado .valor');
+        const prato6 = valor_sobremesa.textContent;
+        const janela_valor_sobremesa = document.querySelector('.itens .nome6');
+        janela_valor_sobremesa.innerHTML= prato6;
+        console.log(janela_valor_sobremesa);
+        const stringValorSobremesa = janela_valor_sobremesa.textContent;
+        console.log(typeof stringValorSobremesa); // deve imprimir 'string'
+
+        const extrairValor_comida = stringValorPrato;
+        const extrairValor_bebida = stringValorBebida;
+        const extrairValor_sobremesa = stringValorSobremesa;
+
+        const regex = /[^\d,.]/g; // expressão regular para remover tudo que não for número, vírgula ou ponto
+        const valor1 = parseFloat(extrairValor_comida.replace(regex, "").replace(",", ".")).toFixed(2);
+        const valor2 = parseFloat(extrairValor_bebida.replace(regex, "").replace(",", ".")).toFixed(2);
+        const valor3 = parseFloat(extrairValor_sobremesa.replace(regex, "").replace(",", ".")).toFixed(2);
+
+        const soma = parseFloat(valor1) + parseFloat(valor2) + parseFloat(valor3);
+
+        const valorTotal = soma.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
+        console.log(valorTotal); // Exibe a string formatada: "R$ XX,XX"
+
+        const janela_valor_total = document.querySelector('.itens .nome8');
+        janela_valor_total.innerHTML= valorTotal;
+        console.log(janela_valor_total);
+
     }
 
     function sairDaPaginadeConfirmacao () {
