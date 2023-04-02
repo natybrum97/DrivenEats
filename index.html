@@ -27,7 +27,7 @@
     <div class="rolagem1">
         <div class="caixa3 frango" onclick="selecionarPrato('.frango')">
             <img class="foto1" src="./Imagens/frango_yin_yang.png" />
-            <p class="nomedoprato">Frango Yin Yang</p>
+            <p id="ident1" class="nomedoprato">Frango Yin Yang</p>
             <p class="descricaodoprato">Um pouco de batata, um pouco de salada</p>
             <div class="verde">
                 <p class="valor">R$ 14,90</p>
@@ -36,7 +36,7 @@
         </div>
         <div class="caixa4 carne" onclick="selecionarPrato('.carne')">
             <img class="foto1" src="./Imagens/frango_yin_yang.png" />
-            <p class="nomedoprato">Carne Yin Yang</p>
+            <p id="ident2" class="nomedoprato">Carne Yin Yang</p>
             <p class="descricaodoprato">Um pouco de batata, um pouco de salada</p>
             <div class="verde">
                 <p class="valor">R$ 17,90</p>
@@ -45,7 +45,7 @@
         </div>
         <div class="caixa5 peixe" onclick="selecionarPrato('.peixe')">
             <img class="foto1" src="./Imagens/frango_yin_yang.png" />
-            <p class="nomedoprato">Peixe Yin Yang</p>
+            <p id="ident3" class="nomedoprato">Peixe Yin Yang</p>
             <p class="descricaodoprato">Um pouco de batata, um pouco de salada</p>
             <div class="verde">
                 <p class="valor">R$ 16,90</p>
@@ -129,20 +129,20 @@
             <div class="avisoverde">
                 <div class="pedido1">Confirme seu pedido</div>
                 <div class="itens">
-                    <div class="ped"></div>
-                    <div class="ped"></div>
+                    <div id="outra1" class="ped"></div>
+                    <div id="outra2" class="ped"></div>
                 </div>
                 <div class="itens">
-                    <div class="ped"></div>
-                    <div class="ped"></div>
+                    <div id="outra3" class="ped"></div>
+                    <div id="outra4" class="ped"></div>
                 </div>
                 <div class="itens">
-                    <div class="ped"></div>
-                    <div class="ped"></div>
+                    <div id="outra5" class="ped"></div>
+                    <div id="outra6" class="ped"></div>
                 </div>
                 <div class="itens">
-                    <div class="ped"></div>
-                    <div class="ped"></div>
+                    <div id="outra7" class="ped"></div>
+                    <div id="outra8" class="ped"></div>
                 </div>
                 <div class="fundo">
                     <button id="finalizarPedidoButton" onclick="continuar()">Tudo certo, pode pedir!</button>
@@ -171,7 +171,7 @@
     const botao = document.querySelector(seletor);
     botao.classList.toggle('selecionado');
     
-    comidaSelecionada = !!document.querySelector('.rolagem1 .selecionado');
+    var comidaSelecionada = !!document.querySelector('.rolagem1 .selecionado');
     atualizarBotaoFinalizarPedido();
   }
 
@@ -213,8 +213,8 @@
         finalizarPedidoButton.classList.add("button");
         finalizarPedidoButton.disabled = true;
     }
-}
-    function irPaginadeconfirmação() {
+    }
+        function irPaginadeconfirmação() {
         const aparecediv = document.getElementById("aparecediv");
 
         if (aparecediv.style.display === "none") {
