@@ -118,50 +118,75 @@
     </div>
 
     <footer class="sacola">
-        <div class="confirmarpedido">Selecione os 3 itens <br>para fechar o pedido</br></div>
-    </footer>
-
-    <footer class="sacola1">
-        <div class="confirmarpedido1">Fechar pedido</div>
+        <button id="finalizarPedidoButton" onclick="continuar()" disabled>Selecione os 3 itens <br>para fechar o pedido</button>
     </footer>
 
     <script>
-        function selecionarPrato(seletor) {
-            const botaoSelecionadoAnteriormente = document.querySelector('.rolagem1 .selecionado');
-            console.log(botaoSelecionadoAnteriormente);
 
-            if ( botaoSelecionadoAnteriormente !== null ){
-            botaoSelecionadoAnteriormente.classList.remove('selecionado');
-            }
+  let comidaSelecionada = false;
+  let bebidaSelecionada = false;
+  let sobremesaSelecionada = false;
 
-            const botao = document.querySelector(seletor);
-            botao.classList.toggle('selecionado');
-        }
+  function selecionarPrato(seletor) {
+    const botaoSelecionadoAnteriormente = document.querySelector('.rolagem1 .selecionado');
 
-        function selecionarBebida(seletor) {
-            const botaoSelecionadoAnteriormente = document.querySelector('.rolagem2 .selecionado');
-            console.log(botaoSelecionadoAnteriormente);
+    if (botaoSelecionadoAnteriormente !== null) {
+      botaoSelecionadoAnteriormente.classList.remove('selecionado');
+    }
 
-            if ( botaoSelecionadoAnteriormente !== null ){
-            botaoSelecionadoAnteriormente.classList.remove('selecionado');
-            }
+    const botao = document.querySelector(seletor);
+    botao.classList.toggle('selecionado');
+    
+    comidaSelecionada = !!document.querySelector('.rolagem1 .selecionado');
+    atualizarBotaoFinalizarPedido();
+  }
 
-            const botao = document.querySelector(seletor);
-            botao.classList.toggle('selecionado');
-            
-        }
+  function selecionarBebida(seletor) {
+    const botaoSelecionadoAnteriormente = document.querySelector('.rolagem2 .selecionado');
 
-        function selecionarSobremesa(seletor) {
-            const botaoSelecionadoAnteriormente = document.querySelector('.rolagem3 .selecionado');
-            console.log(botaoSelecionadoAnteriormente);
+    if (botaoSelecionadoAnteriormente !== null) {
+      botaoSelecionadoAnteriormente.classList.remove('selecionado');
+    }
 
-            if ( botaoSelecionadoAnteriormente !== null ){
-            botaoSelecionadoAnteriormente.classList.remove('selecionado');
-            }
+    const botao = document.querySelector(seletor);
+    botao.classList.toggle('selecionado');
+    
+    bebidaSelecionada = !!document.querySelector('.rolagem2 .selecionado');
+    atualizarBotaoFinalizarPedido();
+  }
 
-            const botao = document.querySelector(seletor);
-            botao.classList.toggle('selecionado');
-        }
+  function selecionarSobremesa(seletor) {
+    const botaoSelecionadoAnteriormente = document.querySelector('.rolagem3 .selecionado');
+
+    if (botaoSelecionadoAnteriormente !== null) {
+      botaoSelecionadoAnteriormente.classList.remove('selecionado');
+    }
+
+    const botao = document.querySelector(seletor);
+    botao.classList.toggle('selecionado');
+    
+    sobremesaSelecionada = !!document.querySelector('.rolagem3 .selecionado');
+    atualizarBotaoFinalizarPedido();
+  }
+  
+  function atualizarBotaoFinalizarPedido() {
+    if (comidaSelecionada && bebidaSelecionada && sobremesaSelecionada) {
+        finalizarPedidoButton.classList.remove("botao-finalizar");
+        finalizarPedidoButton.classList.add("botao-finalizar-habilitado");
+        finalizarPedidoButton.disabled = false;
+        finalizarPedidoButton.textContent = "Fechar Pedido";
+    } else {
+        finalizarPedidoButton.classList.remove("botao-finalizar-habilitado");
+        finalizarPedidoButton.classList.add("botao-finalizar");
+        finalizarPedidoButton.disabled = true;
+    }
+}
+    
+    function continuar() {
+    let nome = prompt('Qual é o seu nome?');
+    let endereco = prompt('Qual é o seu endereço?');
+    window.location.href = `https://wa.me/+5599999999999?text=${nome} - ${endereco}`;
+}
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
