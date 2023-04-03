@@ -50,6 +50,7 @@ function selecionarSobremesa(seletor) {
 
 function atualizarBotaoFinalizarPedido() {
   if (comidaSelecionada && bebidaSelecionada && sobremesaSelecionada) {
+      const finalizarPedidoButton = document.getElementById("finalizarPedidoButton");
       finalizarPedidoButton.style.backgroundColor = "#32B72F";
       finalizarPedidoButton.disabled = false;
       finalizarPedidoButton.textContent = "Fechar Pedido";
@@ -60,8 +61,6 @@ function atualizarBotaoFinalizarPedido() {
   }
   }
       function irPaginadeconfirmação() {
-      let nome = prompt('Qual é o seu nome?');
-      let endereco = prompt('Qual é o seu endereço?');
       const aparecediv = document.getElementById("aparecediv");
 
       if (aparecediv.style.display === "none") {
@@ -149,6 +148,8 @@ function atualizarBotaoFinalizarPedido() {
   function continuar() {
   let {prato1, prato3, prato5, soma1} = irPaginadeconfirmação()
   console.log(prato1, prato3, prato5, soma1);
+  let nome = prompt('Qual é o seu nome?');
+  let endereco = prompt('Qual é o seu endereço?');
   const mensag = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato1}\n- Bebida: ${prato3}\n- Sobremesa : ${prato5}\nTotal: R$ ${soma1}\n\nNome: ${nome}\nEndereço: ${endereco}`
 
   window.open("https://wa.me/5521969895746?text=" + encodeURIComponent(mensag));
