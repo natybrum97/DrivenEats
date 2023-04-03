@@ -153,5 +153,5 @@ function atualizarBotaoFinalizarPedido() {
   let endereco = prompt('Qual é o seu endereço?');
   const mensag = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato1}\n- Bebida: ${prato3}\n- Sobremesa : ${prato5}\nTotal: R$ ${numeroComVirgula}\n\nNome: ${nome}\nEndereço: ${endereco}`
 
-  window.open("https://wa.me/5521966870397?text=" + encodeURIComponent(mensag));
+  window.open("https://wa.me/5521969895746?text=" + encodeURIComponent(mensag));
 }
